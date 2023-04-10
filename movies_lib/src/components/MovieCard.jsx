@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-
 import { FaStar } from "react-icons/fa"
 
 const imageUrl = import.meta.env.VITE_IMG;
 
-const MovieCard = ({ movie, showlink = true }) => {
+
+export default function MovieCard ({ movie, showlink = true }) {
     return (
         <div className="movie-card">
             <img src={imageUrl + movie.poster_path} alt={movie.title} />
@@ -17,4 +17,3 @@ const MovieCard = ({ movie, showlink = true }) => {
     );
 };
 
-export default MovieCard;
